@@ -1,0 +1,73 @@
+body{
+	background-image: url("../images/mario.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+header{
+	color:white;
+	text-align: center;
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Freckle Face', cursive;
+}
+
+.instructions{
+	margin-top: 70px;
+	padding: 20px;
+	width: 700px;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: 'Freckle Face', cursive;
+}
+p {
+	color: black;
+	font-family: 'Freckle Face', cursive;
+
+}
+
+.crystals{
+	padding: 20px;
+	width: 500px;
+	height: 300px;
+	float: right;
+	margin-top: 35px;
+}
+
+#leo {
+	float: left;
+	margin-top: 10px;
+	margin-left: 30px;
+
+}
+
+#purple{
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+
+}
+
+#pink {
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+
+}
+
+#aqua {
+	float: left;
+	margin-top: 10px;
+	margin-left: 30px;
+
+}
+
+section {
+	width: 500px;
+	margin-top: 35px;
+	padding: 10px;
+}
