@@ -6,47 +6,66 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
+	<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+	<script src="assets/javascript/game.js"></script>
 
 </head>
 
 	<header>
-		Moon Crystal Collector 
+		Super Mario Point Collector 
 	</header>
 
 <body>
+<!--this is the section for the insturctions -->
 
 		<div class="instructions">
-			<h1>Instructions:</h1>
-				<p>At the start of the game you will recieve a random number.
-				<p>To the side you will see four crystals, you need to click on the crystals to match the number that is given to you.</p> 
-				<p>If you successfully match the numbers, you win!</p>
-				<p>If your number surpasses the random number, you lose :( </p>	
+				<h1>Instructions:</h1>
+						<p>At the start of the game you will recieve a random number.</p>
+						<p>To the side you will see four crystals, </p>
+						<p>you need to click on the crystals to match the number that is given to you.</p> 
+						<p>If you successfully match the numbers, you win!</p>
+						<p>If your number surpasses the random number, you lose :( </p>	
 		</div>
 
-		<div class="crystals">
-			<div id="aqua">
-			<img src="assets/images/star.gif" alt="star" style="width: 204px;height: 128px;">
+<!-- characters and their images are placed here -->
+
+	<div class="characters">
+			<div id="star">
+			<img src="assets/images/star.gif" alt="star" style="width: 170px;height: 128px;">
 			</div>
-			<div id="pink">
-			<img src="assets/images/toad.gif" alt="toad" style="width: 204px;height: 128px;">
+			<div id="toad">
+			<img src="assets/images/toad.gif" alt="toad" style="width: 170px;height: 128px;">
 			</div>
-			<div id="purple">
-			<img src="assets/images/bowser.gif" alt="bowser" style="width: 204px;height: 128px;">
+			<div id="bowser">
+			<img src="assets/images/bowser.gif" alt="bowser" style="width: 170px;height: 128px;">
 			</div>
-			<div id="leo">
-			<img src="assets/images/yoshi_standing.gif" alt="yoshi" style="width: 204px;height: 128px;">
+			<div id="yoshi">
+			<img src="assets/images/yoshi_standing.gif" alt="yoshi" style="width:170px;height: 128px;">
 			</div>
 		</div>
 
+<!-- where the random generated number will be placed and total of gamer -->
+						<aside>
+						<div id="random"><h1>Random Number:</h1>
+						<div id="randomnumber"></div>
+						</div>
+							
+						<br><br><br>
+						<div id="score"><h1>Your Number:</h1>
+							<div id="userscore"></div>
+						</div>
+
+						</aside>
+
+<!-- score board placement -->
 			<section>
-				<h1>Wins:</h1>
-				<div id="scorewins"></div>
-				<h1>Losses:</h1>
-				<div id="scorelosses"></div>
+				<h1>Score Board</h1>
+				<div id="scorewins"><h2>Wins:</h2></div>
+				<div id="scorelosses"><h2>Losses:</h2></div>
 			</section>
-
-
-
 
 
 </body>
