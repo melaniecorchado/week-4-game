@@ -12,22 +12,26 @@ $(document).ready(function(){
 	var score = 0;
 	var wins = 0;
 	var losses = 0;
-
 	var star = 1, toad = 5, bowser = 10, yoshi = 25;
 
 //clicks for each character 
 
-function wins(){
-	//alert("winner!");
+function win(){
 	reset();
+	wins++;
+	document.getElementById("scorewins").innerHTML=wins;
+
+
 }
 
 
 function loss(){
-	//alert("you lose!");
 	reset();
+	losses++;
+	document.getElementById("scorelosses").innerHTML=losses;
 
 }
+
 
  $("#star").click(function(){
  	score = score + star;
