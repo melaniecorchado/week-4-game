@@ -4,8 +4,6 @@ $(document).ready(function(){
 	var random = Math.floor(Math.random()*150+12);			
 	document.getElementById("randomnumber").innerHTML=random;
 
-
-
 //shows in HTML
 	$('#randomNumber').text(random);
 
@@ -15,27 +13,19 @@ $(document).ready(function(){
 	var wins = 0;
 	var losses = 0;
 
-var star = 1, toad = 5, bowser = 10, yoshi = 25;
-//for loop to generate the random number(s)
-	/*function randomNumber (){
-		for (var i = 0; i < 4; i++){
-			//this will select a random number between 1 and 14
-			var count = Math.floor(Math.random()*13)+ 1;
-			console.log(randomNumber);
-		}
-	}
-
-randomNumber();*/
+	var star = 1, toad = 5, bowser = 10, yoshi = 25;
 
 //clicks for each character 
 
 function wins(){
-	alert("wins");
+	//alert("winner!");
+	reset();
 }
 
 
-function losses(){
-	alert("losses");
+function loss(){
+	//alert("you lose!");
+	reset();
 
 }
 
@@ -45,11 +35,11 @@ function losses(){
 	document.getElementById("userscore").innerHTML=score;
 
  		if (score === random){
- 			wins();
+ 			win();
  		}
 
  		else if (score > random){
- 			losses();
+ 			loss();
  		}
  		 		
  	})
@@ -60,11 +50,11 @@ function losses(){
 	document.getElementById("userscore").innerHTML=score;
 
  		if ( score === random){
- 			wins();
+ 			win();
  		}
 
  		else if (score > random){
- 			losses();
+ 			loss();
  		}
 
  })
@@ -75,11 +65,11 @@ function losses(){
 	document.getElementById("userscore").innerHTML=score;
  	
  		if ( score === random){
- 			wins();
+ 			win();
  		}
 
  		else if (score > random){
- 			losses();
+ 			loss();
  		}
 
  })
@@ -90,15 +80,20 @@ function losses(){
 	document.getElementById("userscore").innerHTML=score;
 
  		if ( score === random){
- 			wins();
+ 			win();
  		}
 
  		else if (score > random){
- 			losses();
+ 			loss();
  		}
 
  	})
 
+function reset(){
+	random = Math.floor(Math.random()*150+12);			
+	document.getElementById("randomnumber").innerHTML=random;
+	score = 0;
 
+}
 
 });
